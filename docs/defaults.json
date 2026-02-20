@@ -1,0 +1,20 @@
+{
+  "currency": "USD",
+  "pagination": {
+    "defaultPageSize": 20,
+    "maxPageSize": 100
+  },
+  "auth": {
+    "accessTokenMinutes": 30,
+    "refreshTokenDays": 14,
+    "cookieSameSite": "lax",
+    "cookieSecureInDev": false
+  },
+  "roles": ["ORG_OWNER", "ADMIN", "BUYER", "VENDOR", "VIEWER"],
+  "stateMachines": {
+    "request": ["DRAFT", "PUBLISHED", "QUOTING", "SHORTLIST", "AWARDED", "CLOSED"],
+    "quote": ["SUBMITTED", "UPDATED", "WITHDRAWN", "ACCEPTED", "REJECTED"],
+    "deal": ["NEGOTIATION", "CONTRACT", "INVOICED", "PAID", "ARCHIVED"],
+    "invoice": ["DRAFT", "SENT", "PAID", "VOID"]
+  }
+}

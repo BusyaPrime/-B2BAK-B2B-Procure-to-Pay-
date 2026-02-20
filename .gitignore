@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+frontend/.pnpm-store/
+.next
+dist
+coverage
+__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.venv
+*.pyc
+postgres_data
+playwright-report
+test-results
